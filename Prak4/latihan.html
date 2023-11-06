@@ -1,0 +1,74 @@
+<!-- Nama : Dave Nathanael Anthonius -->
+<!-- NIM  : 121140025                -->
+<!-- Kelas: RC                       -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+            function penjumlahan(a,b){
+                  console.log(a+b);
+            }
+
+            function pengurangan(a,b){
+                  console.log(a-b);
+            }
+
+            function perkalian(a,b){
+                  console.log(a*b);
+
+            }
+            function pemebagian(a,b){
+                  console.log(a/b);
+
+            }
+            
+            function boolean(a,b){
+                  console.log(a%b);
+            }
+
+            let a = 5;
+            let b = 5;
+
+        
+            let pilih = true;
+
+            while(pilih==true){
+      
+                  operation= prompt("pilih operasi");
+
+                  if(operation=="+"){
+                        penjumlahan(a,b)
+                  }
+                  else if(operation=="-"){
+                        pengurangan(a,b)
+                  }
+                  else if(operation=="*"){
+                        perkalian(a,b)
+                  }
+                  else if(operation=="/"){
+                        pemebagian(a,b)
+                  }
+                  else if(operation=="*"){
+                        boolean(a,b)
+                  }
+                  else{
+                        console.log("salah nginput woy!!")
+                  }
+
+                  let gas = prompt("lanjut gak<y/n>");
+
+                  if(gas=="y"){
+                        pilih===true;
+                  }else{
+                        break;
+                  }
+            }
+      </script>
+</body>
+</html>

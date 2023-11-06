@@ -1,0 +1,36 @@
+<!-- Nama : Dave Nathanael Anthonius -->
+<!-- NIM  : 121140025                -->
+<!-- Kelas: RC                       -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bilangan Ganjil dan Genap</title>
+</head>
+<body>
+    <h1>Menghitung Bilangan Ganjil dan Genap</h1>
+    <p>Masukkan bilangan bulat positif.</p>
+    <input type="number" id="angka">
+    <button onclick="hitungGanjilGenap()">Hitung</button>
+    <p><span id="ganjil"></span></p>
+    <p><span id="genap"></span></p>
+</body>
+<script>
+    function hitungGanjilGenap() {
+        var angka = parseInt(document.getElementById("angka").value);
+        var jumlahGanjil = 0;
+        var jumlahGenap = 0;
+        for (var i = 1; i <= angka; i++) {
+            if (i % 2 === 0) {
+                jumlahGenap++;
+            } else {
+                jumlahGanjil++;
+            }
+        }
+        document.getElementById("ganjil").textContent = "Jumlah Bilangan Ganjil: " + jumlahGanjil;
+        document.getElementById("genap").textContent = "Jumlah Bilangan Genap: " + jumlahGenap;
+    }
+</script>
+</html>
